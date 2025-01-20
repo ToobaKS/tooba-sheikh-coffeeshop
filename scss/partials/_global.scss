@@ -1,0 +1,87 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0;
+}
+
+/*Navigation Bar*/
+
+.logo {
+  width: 3.125rem;
+}
+
+
+
+.topbar{
+    background-color: #fff0ed;
+    padding: 1.25rem 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topbar__logo{
+    padding-bottom: 0.75rem;
+}
+
+.topbar__subsection{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-left: 1.25rem;
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  list-style-type: none;
+  padding: 0.9375rem;
+}
+
+.navbar__list li a {
+  text-decoration: none;
+  color: #393939;
+  padding-right: 5rem;
+  font-weight: 400;
+  font-size: 21px;
+}
+
+#navheading {
+  font-weight: 300;
+  font-size: 50px;
+  text-decoration: none;
+  color: #393939;
+  padding: 1.25rem 1.25rem 1.25rem .35rem;
+}
+
+#shop {
+  color: #5bacc3;
+}
+
+/*Generic Font Sizes*/
+
+h1,
+h2 {
+  font-weight: 300;
+  font-size: 60px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 33px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+}

@@ -1,0 +1,266 @@
+@use './partials/global' as *;
+@use "./partials/keyframes";
+
+.title,
+.footer {
+  background-color: #fff0ed;
+}
+
+/*button styling*/
+
+.outer {
+  border: solid 2px #393939;
+  width: 11.25rem;
+  height: 3.75rem;
+  position: relative;
+}
+
+button {
+  background-color: #5bacc3;
+  color: white;
+  border: none;
+  font-size: 21px;
+  font-weight: 400;
+  width: 11.25rem;
+  height: 3.75rem;
+  padding: 1.25rem 0rem;
+
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: -1;
+}
+
+/*Title Shop now section styling*/
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+.title__image,
+.title__branding {
+  padding: 2.5rem 11.25rem;
+}
+
+.title__branding {
+  margin-left: 6.25rem;
+}
+
+.title__image {
+  margin-right: 9.375rem;
+}
+
+.title__branding h1,
+.title__branding p,
+.title__branding .outer {
+  margin: 2rem;
+}
+
+.title__branding a {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.title__branding p {
+  width: 25rem;
+}
+
+/*Product Cards*/
+
+.products {
+  padding: 1.25rem;
+  background-color: #f7f7f7;
+  position: relative;
+  z-index: 0;
+}
+
+.products__heading {
+  margin: 1.25rem;
+  text-align: center;
+}
+
+.products__button {
+  text-align: center;
+}
+
+.products .outer {
+  margin-bottom: 2.5rem;
+  margin-top: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+.card__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 20.625rem;
+  height: 27.5rem;
+  margin: 5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+  background-color: white;
+}
+
+.card__img {
+  height: 17.5rem;
+  margin-top: 1.25rem;
+}
+
+.card__info {
+  background-color: #fff0ed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  padding: 1.9rem 1.5625rem;
+}
+
+.card__amount {
+  color: #909090;
+}
+
+.card__price {
+  color: #5bacc3;
+  font-size: 33px;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*We are different section*/
+
+.ourbeans {
+  padding: 3.75rem;
+  padding-right: 5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.ourbeans__outer{
+    border: solid 5px #5bacc3;
+    width: 25rem;
+    height: 25rem;
+    margin-top: 4rem;
+    margin-right: 4rem;
+    position: relative;
+}
+
+.ourbeans__img {
+  background-image: url("../assets/images/coldbrewbackground.png");
+  width: 25rem;
+  height: 25rem;
+  background-position: center;
+  background-size: cover;
+
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: -2;
+}
+
+.ourbeans__img img {
+  height: 17.5rem;
+}
+
+.img:hover{
+  animation: rotatesinf linear 2s infinite;
+}
+
+.ourbeans__heading,
+.ourbeans__icons,
+.ourbeans__statement {
+  width: 50%;
+  margin: 3rem 3rem 3rem 3rem;
+}
+
+.ourbeans__button .outer {
+  margin: 3rem 3rem 3rem 3rem;
+}
+.ourbeans__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*discount box*/
+
+.discount {
+  text-align: center;
+  width: 90%;
+  background-color: #393939;
+  color: white;
+  margin: 12.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  animation: change-color linear 2.5s infinite alternate;
+}
+
+
+.discount p {
+  padding: 2.5rem;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+span {
+  font-weight: bold;
+}
+
+/*footer*/
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__section {
+  padding: 5rem;
+}
+
+.footer__section h3 {
+  padding-bottom: 1.25rem;
+}
+
+.footer__beans{
+    position: relative;
+}
+
+.footer__bean--left{
+    position: absolute;
+    opacity: 0.25;
+    width: 7rem;
+    bottom: 1px;
+    right: 1835px
+
+}
+
+.footer__bean--right{
+    position: absolute;
+    opacity: 0.25;
+    width: 7rem;
+    left: 35px;
+}

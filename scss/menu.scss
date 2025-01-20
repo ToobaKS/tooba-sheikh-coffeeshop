@@ -1,0 +1,101 @@
+@use './partials/global' as *;
+
+.hero {
+  background-image: url(../assets/images/coffee-circle.png);
+  width: 100%;
+  height: 43.75rem;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -2;
+}
+
+.hero__outer{
+    border: 5px solid #5bacc3;;
+    width: 18.75rem;
+    height: 12.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero__heading {
+  color: white;
+  width: 18.75rem;
+  height: 12.5rem;
+  background-color: #393939;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: -1;
+}
+
+.navbarsecondary {
+  text-align: center;
+  list-style-type: none;
+  width: 100%;
+  height: 5rem;
+  background-color: #393939;
+}
+.navbarsecondary li {
+  display: inline-block;
+  margin-top: 1.5625rem;
+}
+
+.navbarsecondary li a {
+  font-size: 21px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  padding: 0px 1.25rem;
+  border-width: 0.25rem;
+  border-left: solid;
+  border-color: #5bacc3;
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu__category {
+  padding: 1.25rem 0rem;
+  background-color: #fff0ed;
+}
+
+.menu__category--backgroundcolor {
+  background-color: #f7f7f7;
+}
+
+.menu__heading {
+  margin: 1.25rem;
+}
+
+.subsection {
+  margin: 1.25rem;
+}
+
+.subsection__heading {
+  font-weight: 400;
+  font-size: 33px;
+  margin: 1.25rem;
+}
+
+.subsection__description {
+  font-style: italic;
+  margin-bottom: 0.9375rem;
+  width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subsection__price {
+  color: #5bacc3;
+}
